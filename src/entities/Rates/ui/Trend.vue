@@ -31,7 +31,7 @@ const isGrowing = computed(() => {
 
 <style scoped lang='scss'>
 .trend {
-  color: $color-error;
+  color: $error-color;
   font-size: 1.5rem;
 
   &_growing {

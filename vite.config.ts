@@ -13,9 +13,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
-      Styles: path.resolve(__dirname, 'src/assets/styles'),
-      Images: path.resolve(__dirname, 'src/assets/images'),
-      Fonts: path.resolve(__dirname, 'src/assets/fonts'),
+      Styles: path.resolve(__dirname, 'src/app/styles'),
+      Images: path.resolve(__dirname, 'src/shared/assets/images'),
       Components: path.resolve(__dirname, 'src/components'),
       Shared: path.resolve(__dirname, 'src/shared'),
       Entities: path.resolve(__dirname, 'src/entities'),
@@ -30,7 +29,7 @@ export default defineConfig({
       scss: {
         api: 'modern-compiler',
         additionalData: `@use '${normalizePath(
-          path.resolve(__dirname, 'src/assets/styles/imports.scss')
+          path.resolve(__dirname, 'src/app/styles/imports.scss')
         )}' as *;`,
       },
     },

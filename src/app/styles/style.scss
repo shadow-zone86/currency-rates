@@ -7,9 +7,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  --mainfontcolor: #ffffff;
-  --cardbackground: #201e26;
 }
 
 *,
@@ -106,9 +103,6 @@ select {
   :root {
     color: #213547;
     background-color: #ffffff;
-
-    --mainfontcolor: #213547;
-    --cardbackground: #f9f9f9;
   }
   a:hover {
     color: #747bff;

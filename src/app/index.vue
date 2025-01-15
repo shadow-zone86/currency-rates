@@ -27,11 +27,11 @@ nav {
   a {
     padding: 1rem 2rem;
     border-radius: 2rem 2rem 0 0;
-    border: 2px solid var(--cardbackground);
+    border: 2px solid $main-dark-color;
 
     &.router-link-active {
       font-weight: 700;
-      background: var(--cardbackground);
+      background: $main-dark-color;
     }
   }
 }

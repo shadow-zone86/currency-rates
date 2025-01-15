@@ -36,7 +36,7 @@ const props = withDefaults(defineProps<IProps>(), {
     color: $gray-font-color;
     padding: 2rem;
     border-radius: 5rem;
-    background: var(--cardbackground);
+    background: $main-dark-color;
   }
 }
 </style>

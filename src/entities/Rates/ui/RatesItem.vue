@@ -31,6 +31,6 @@ const props = withDefaults(defineProps<IProps>(), {
   align-items: center;
   border-radius: 10rem;
   padding: 1rem;
-  background: var(--cardbackground);
+  background: $main-dark-color;
 }
 </style>

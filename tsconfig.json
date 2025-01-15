@@ -22,9 +22,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "Styles/*": ["src/assets/styles/*"],
-      "Images/*": ["src/assets/images/*"],
-      "Fonts/*": ["src/assets/fonts/*"],
+      "Styles/*": ["src/app/styles/*"],
+      "Images/*": ["src/shared/assets/images/*"],
       "Components/*": ["src/components/*"],
       "Shared/*": ["src/shared/*"],
       "Entities/*": ["src/entities/*"],
