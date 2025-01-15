@@ -1,0 +1,119 @@
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --mainfontcolor: #ffffff;
+  --cardbackground: #201e26;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+html {
+  font-family: $body-font-family;
+  font-size: $font-size-root;
+  line-height: 1.5;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+
+  @media screen and (max-width: $breakpoint-sm) {
+    font-size: calc(100vw / 52);
+  }
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: 10px;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-weight: 500;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  text-align: center;
+
+  @include sm {
+    font-size: 1.7rem;
+  }
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+input,
+select {
+  font-family: $body-font-family;
+  font-size: 2.4rem;
+
+  @include sm {
+    font-size: 2rem;
+  }
+}
+
+#app {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include sm {
+    width: 56rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+
+    --mainfontcolor: #213547;
+    --cardbackground: #f9f9f9;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
