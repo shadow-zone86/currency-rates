@@ -9,11 +9,11 @@ cp .gitignore dist/
 cd dist
 
 git init
-git checkout -b master
+git checkout -b main
 git add -A
 git commit -m '[deploy] gh-pages'
 
-git push -f git@github.com:shadow-zone86/currency-rates.git master:gh-pages
+git push -f git@github.com:shadow-zone86/currency-rates.git main:gh-pages
 
 cd -
 
